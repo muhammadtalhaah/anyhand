@@ -1,6 +1,6 @@
-# AnyHandy
+# AnyHand
 
-AnyHandy is a React-based marketplace web app for connecting users with handymen and service providers. It includes a public landing site, a multi-step service request flow, job posting management, and protected user/handyman dashboards.
+AnyHand is a React-based marketplace web app for connecting users with handymen and service providers. It includes a public landing site, a multi-step service request flow, job posting management, and protected user/handyman dashboards.
 
 ## Features
 

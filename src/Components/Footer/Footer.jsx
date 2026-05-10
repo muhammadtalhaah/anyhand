@@ -52,7 +52,7 @@ export const Footer = () => {
           <hr style={{ width: '90vw' }}/>
           <div className='copyrights sm_desktop:mt-5'>
             <h4>Design by anyhand. All Rights Reserved.</h4>
-            <h4>© 2024 anyhandy.com</h4>
+            <h4>© 2024 anyhand.com</h4>
           </div>
         </section>
       </footer>
