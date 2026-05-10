@@ -1,0 +1,210 @@
+.FAQs-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 5%;
+
+    /* background: radial-gradient(circle at 0% 50%, rgba(135,206,250,0.5) 0%, rgba(255,255,255,0) 66%); */
+}
+
+.FAQs-container .top-heading{
+    font-family: Onest;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0D0B01;
+}   
+    .FAQs-questions {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-top: 20px;  */
+        flex-direction: column;
+      }
+      .FAQs-questions .question-portion {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 20px; 
+        
+        padding: 24px 27px;
+        border-radius: 20px;
+        border: 1px solid #E9E9E9;
+        gap: 20px;
+        background-color: #ffffff;
+
+        color: black; /* Assuming text color should be black */
+    }
+    
+    .FAQs-container .heading-text{
+    font-family: Onest;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #868580;
+    
+    }
+
+    .circle {
+        min-width: 60px;
+        min-height: 60px;
+        background-color: #00CF91;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .question-mark {
+        color: white;
+        font-size: 30px;
+    }
+    
+    
+    .bold-text {
+        font-family: Onest;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #0D0B01;
+    }
+    
+
+    .answer {
+        font-family: Onest;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #777777;
+      }
+      .answer.active {
+        height: auto;
+        max-height: 300px;
+        transition: all 0.5s linear;
+    }
+      
+
+    .minus-sign {
+        color: #00CF91;
+        font-size: 24px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 100ms ease;
+
+        &:hover {
+            background-color: rgba(0, 207, 145, 0.1);
+        }
+    }
+    .slide-bottom {
+        -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+      @keyframes slide-bottom {
+        0% {
+            max-height: 0;
+        }
+        100% {
+            max-height: 200px;
+        }
+      }
+    
+      .slide-bottom-close {
+        -webkit-animation: slide-top 2s linear both;
+        animation: slide-top 2s linear both;
+      }
+      @keyframes slide-top {
+        0% {
+            max-height: 200px;
+        }
+        100% {
+            max-height: 0;
+        }
+      }      
+      
+
+
+/* responsive code */
+
+@media screen and (max-width: 350px) and (min-width: 300px) {
+    .FAQs-container {
+        margin-top: 50px;
+    }
+    .bold-text {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    
+    .long-text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .FAQs-questions .question-portion {
+        margin-top: 20px; 
+        /* height: 200px; */
+    }
+
+    .content {
+        flex-direction: row;
+    }
+    .question-portion {
+        flex-direction: column;
+    }
+    .circle {
+        margin-top: 10px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .minus-sign {
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 351px) {
+    .FAQs-container {
+        margin-top: 50px;
+    }
+    .bold-text {
+        font-size: 1rem;
+        line-height: 15px;
+    }
+    
+    .long-text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .FAQs-questions .question-portion {
+        margin-top: 20px; 
+    }
+    .content {
+        flex-direction: row;
+    }
+    .question-portion {
+        flex-direction: column;
+    }
+    .circle {
+        margin-top: 10px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    .minus-sign {
+        min-width: 30px;
+        min-height: 30px;
+    }  
+}

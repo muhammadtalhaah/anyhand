@@ -1,0 +1,130 @@
+a, a:hover, a:focus {
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+}
+
+.text-primary{
+    color : #5a8dee !important;
+}
+.card {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-top: 40px; 
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #0D0B01;     
+}
+.rc-accordion-header {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
+}
+.rc-accordion-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.rc-accordion-toggle.active{
+    background-color: transparent;
+}
+.rc-accordion-card{
+    border: 1px solid #E9E9E9;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.rc-accordion-card:last-child{
+    margin-bottom: 0;
+}
+.rc-accordion-title{
+    font-family: Onest;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0D0B01;
+}
+.rc-accordion-icon{
+    position: relative;
+    top: 2px;
+    color: #475F7B;
+    transition: 0.35s;
+    font-size: 12px;
+}
+.rc-accordion-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 15px;
+}
+.rc-accordion-body p{
+    margin-bottom: 0;
+}
+.rc-collapse{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+.rc-collapse.show{
+    height: auto;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+    min-height: 50px;
+
+    max-width: 50px;
+    max-height: 50px;
+
+    background-color: #00CF91;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-mark {
+    color: white;
+    font-size: 30px;
+}
+.answer {
+    font-family: Onest;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sign {
+    font-family: Onest;
+    color: #00CF91;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms ease;
+    
+    &:hover {
+        background-color: rgba(0, 207, 145, 0.1);
+    }
+}

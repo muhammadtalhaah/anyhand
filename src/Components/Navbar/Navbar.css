@@ -1,0 +1,156 @@
+.nav-container {  
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .nav-logo-container img {
+    width: 187px;
+    height: 80%;
+  }
+
+  .navbar-links-container a,
+  .navbar-links-container-sidebar a {
+    margin-right: 40px;
+    font-family: Onest;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .navbar-links-container a.home-link,  
+  .navbar-links-container-sidebar a.home-link {
+    color: #00CF91;
+    font-family: Onest;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative; /* Ensure the anchor is a positioned element */
+  }
+  
+  .navbar-links-container a.home-link::after,
+  .navbar-links-container-sidebar a.home-link::after 
+  {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Adjust this value to control the distance of the underline from the text */
+    width: 100%; /* Extend the underline across the width of the anchor */
+    height: 3px; /* Height of the underline */
+    background-color: #00CF91; /* Green color for the underline */
+  }
+  
+  /* Additional rule to target only the "Sign Up" link */
+  .navbar-links-container a.home-link:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger_icon {
+    display: none;
+  }
+
+  #sidebar {
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px;
+    background-color: rgb(226, 226, 226, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 8px;
+    padding-left: 35px;
+  }
+
+  .navbar-links-container-sidebar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+/* responsive code */
+
+@media screen and (max-width: 320px) {
+  #logo {
+    width: 80px;
+    height: 33px;
+  }
+  .navbar-links-container {
+    display: none;
+  } 
+  .hamburger_icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+  } 
+}
+
+@media screen and (max-width: 420px) {
+  .nav-logo-container img {
+    width: 100px;
+    height: 33px;
+  }
+  .navbar-links-container {
+    display: none;
+  }  
+
+  .hamburger_icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-links-container {
+    display: none;
+  } 
+  .hamburger_icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+  } 
+  
+}
+
+@media screen and (max-width: 750px) {
+  .navbar-links-container {
+    display: none;
+  } 
+  .hamburger_icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+  } 
+  
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-links-container {
+    display: none;
+  } 
+  .hamburger_icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+  } 
+  
+}

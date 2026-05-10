@@ -1,0 +1,118 @@
+.reviewBox_container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .subreviewBox {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .reviewBox_layout {
+    /* Add styles for your review box layout */
+  }
+.reviewBox_heading{
+    font-family: Onest;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+        
+    }
+  
+  .image-container {
+    position: relative; /* Set position to relative */
+  }
+  .review-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Add any additional styles for your review image */
+  }
+  .text-over-image {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+   .para_detail{
+    font-family: Onest;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    
+}
+
+.reviewBox_heading_price{
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: #9A9A9A; 
+}
+
+.para_heading{
+    font-family: Onest;
+font-size: 20px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+color: #0D0B01;
+
+}
+
+
+
+
+/* responsive code */
+
+@media screen and (max-width: 350px) and (min-width: 300px) {
+  .rectangle-image {
+    width: 85vw;
+    height: 70vh;
+    max-height: 330px;
+  }
+  .review-image {
+    top: 5%;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 420px) and (min-width: 351px) {
+  .rectangle-image {
+    width: 85vw;
+    height: 40vh;
+  }
+  .review-image {
+    top: 2%;
+    left: 2%;
+    width: 80px;
+    height: 80px; 
+  }
+  .text-over-image {
+    margin-bottom: -5%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 421px) {
+  .rectangle-image {
+    width: 300px;
+    height: 35vh;
+    max-height: 350px;
+  }
+  .review-image {
+    top: 0%;
+    left: -5%;
+  }
+  .text-over-image {
+    margin-bottom: -5%;
+  }
+}
