@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,9 +20,10 @@ body {
   border-bottom: 2px solid transparent;
 
   transition: all 100ms ease-in-out;
-  &:hover {
-    border-bottom: 2px solid #00CF91;
-  }
+}
+
+#navLinksContainer > ul > li:hover {
+  border-bottom: 2px solid #00CF91;
 }
 
 input::-webkit-outer-spin-button,
@@ -43,32 +43,38 @@ input:focus {
 .button_global_style {
   outline: none;
   transition: all 0.3s ease; /* Added transition property */
-  &:hover {
-    background: #fff;
-    color: #00CF91;
-    cursor: pointer;
-    box-shadow: 10px 10px 20px 0px rgba(0, 207, 145, 0.2) ;
-   }
- &:active{
+}
+
+.button_global_style:hover {
+  background: #fff;
+  color: #00CF91;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px 0px rgba(0, 207, 145, 0.2);
+}
+
+.button_global_style:active {
   color: #fff;
   background-color: rgb(110, 110, 255);
- }
 }
 
 #nav_SignUp,
 #nav_SignIn {
   background-color: transparent !important;
   transition: all 0.3s ease;
-  &:hover{
-    background-color: transparent !important;
-  }
 }
+
+#nav_SignUp:hover,
+#nav_SignIn:hover {
+  background-color: transparent !important;
+}
+
 .swal2-confirm {
   transition: all 0.3s ease;
-  &:hover {
-    color: #fff !important;
-    background-color: #05815c !important;
-  }
+}
+
+.swal2-confirm:hover {
+  color: #fff !important;
+  background-color: #05815c !important;
 }
 .p-dropdown-items-wrapper::-webkit-scrollbar {
   display: none;
@@ -81,10 +87,11 @@ input:focus {
 
 .p-dropdown-item{
   padding: 0.5rem 1.25rem;
-  &:hover,
-  &.p-highlight {
-    background-color: rgb(240, 253, 244);
-  }
+}
+
+.p-dropdown-item:hover,
+.p-dropdown-item.p-highlight {
+  background-color: rgb(240, 253, 244);
 }
 
 .p-datepicker	 {
@@ -102,10 +109,11 @@ input:focus {
   cursor: pointer;
   outline: none;
   border: none;
-  &:focus {
-    outline: none;
-    border: none;
-  }
+}
+
+.p-inputtext:focus {
+  outline: none;
+  border: none;
 }
 
 .p-datepicker-current-day	 {
