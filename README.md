@@ -1,71 +1,97 @@
-# Getting Started with Create React App
+# AnyHandy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AnyHandy is a React-based marketplace web app for connecting users with handymen and service providers. It includes a public landing site, a multi-step service request flow, job posting management, and protected user/handyman dashboards.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Public marketing pages with sections for services, about, reviews, and FAQs
+- Service request flow with step-based progress tracking
+- Job posting details page with invitation actions
+- Authentication pages for sign up and sign in
+- Protected routes for user and handyman dashboard areas
+- Centralized auth and progress state with React Context
+- API integration through Axios
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 18
+- React Router DOM
+- Axios
+- Formik and Yup
+- Material UI
+- PrimeReact
+- Tailwind CSS
+- SweetAlert2
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+- `src/pages` - top-level routes and page layouts
+- `src/Components` - reusable UI sections and feature components
+- `src/context` - auth and progress state providers
+- `src/utils` - route guards and helpers
+- `src/api` - Axios client setup
+- `src/Assets` - images, icons, and static media
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Available Routes
 
-### `npm run build`
+- `/` - landing page
+- `/services` - service request form
+- `/signUp` - sign up page
+- `/signIn` - sign in page
+- `/jobPosting` - job posting details
+- `/jobPosting/inviteHandyman` - invite handyman flow
+- `/hero-dashboard` - protected handyman dashboard
+- `/userProfile` - protected user profile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js 16+ recommended
+- npm
 
-### `npm run eject`
+### Install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app runs at `http://localhost:3000`.
 
-## Learn More
+### Build for production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Run tests
 
-### Code Splitting
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## API Configuration
 
-### Analyzing the Bundle Size
+The app currently points to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```js
+https://anyhand.co/
+```
 
-### Making a Progressive Web App
+This is configured in [`src/api/axios.js`](src/api/axios.js). If you move the backend or want environment-based configuration, update that file accordingly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Authentication
 
-### Advanced Configuration
+Authentication is currently handled with a JWT stored in `localStorage` under the `jwt` key. The route guards in `src/utils` redirect unauthenticated users away from protected pages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Notes
 
-### Deployment
+- This project was bootstrapped with Create React App.
+- Tailwind CSS is available in the project, alongside component libraries such as MUI and PrimeReact.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# anyhand
